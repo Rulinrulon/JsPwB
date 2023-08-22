@@ -41,3 +41,20 @@
 //}
 //
 //terminanEnA(palabras);
+
+//Actividad 5
+//let numeros = [5, -10, -2, -25, -7];
+//
+//function ordenarValorAbsoluto(numbers) {
+//  let valores = [];
+//  for (let number of numbers) {
+//    const numeroAbsoluto = Math.abs(number);
+//    valores.push(numeroAbsoluto);
+//  }
+//
+//  return valores.sort(function (a, b) {
+//    return a - b;
+//  });
+//}
+//
+//console.log(ordenarValorAbsoluto(numeros));
