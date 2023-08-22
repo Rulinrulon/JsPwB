@@ -5,7 +5,7 @@
 //console.log(numbers);
 
 //Actividad 2
-//const array = ["nombre", "hamburguesa", "papas"];
+//const array = ["nombre", "hamburguesa", "cokucha"];
 
 //function procesarPedido(pedidos) {
 // const nombre = pedidos.shift();
@@ -58,3 +58,21 @@
 //}
 //
 //console.log(ordenarValorAbsoluto(numeros));
+
+//Actividad 6
+//let palabras = ["hola", "uno", "Buenos Aires"];
+//let palabra = "Buenos Aires";
+//
+//function buscaPalabras(palabras, palabra) {
+//  const indice = palabras.indexOf(palabra);
+//  let array = [];
+//  for (let palabra of palabras) {
+//    if (palabra.length > indice) {
+//      array.push(palabra);
+//    }
+//  }
+//
+//  console.log(array);
+//}
+//
+//buscaPalabras(palabras, palabra);
