@@ -33,11 +33,11 @@
 //sumarPares(numero);
 
 //Actividad 4
-let palabras = ["computadora", "casa", "tenga", "marica"];
-
-function terminanEnA(palabras) {
-  const terminaEnA = palabras.every((palabra) => palabra.endsWith("a"));
-  console.log(terminaEnA);
-}
-
-terminanEnA(palabras);
+//let palabras = ["computadora", "casa", "tenga", "marica"];
+//
+//function terminanEnA(palabras) {
+//  const terminaEnA = palabras.every((palabra) => palabra.endsWith("a"));
+//  console.log(terminaEnA);
+//}
+//
+//terminanEnA(palabras);
