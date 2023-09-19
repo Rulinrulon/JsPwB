@@ -1,0 +1,12 @@
+li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: repeat(auto-fit, auto);
+  border-radius: 20px;
+  background-color: rgb(44, 44, 44);
+  list-style: none;
+}
+
+.img {
+  width: 100%;
+}
