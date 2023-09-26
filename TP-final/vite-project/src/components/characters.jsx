@@ -11,19 +11,29 @@ export function Characters() {
 
   return (
     <>
-      {characters.map((item, index) => (
-        <li key={index}>
-          <img className="img" src={item.image}></img>
-          <h3>{item.name}</h3>
-          <p>
-            {item.status} - {item.species}
-          </p>
-          <p>Last known location:</p>
-          <p>{item.location.name}</p>
-          <p>First seen in:</p>
-          <p>{item.origin.name}</p>
-        </li>
-      ))}
+      <div className="tarjetas">
+        {characters.map((item, index) => (
+          <div className="personaje" key={index}>
+            <img className="img" src={item.image}></img>
+            <div className="info">
+              <div className="texto">
+                <h2>{item.name}</h2>
+                <h4>
+                  {item.status} - {item.species}
+                </h4>
+              </div>
+              <div className="texto">
+                <p>Last known location:</p>
+                <h3>{item.location.name}</h3>
+              </div>
+              <div className="texto">
+                <p>First seen in:</p>
+                <h3>{item.origin.name}</h3>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
