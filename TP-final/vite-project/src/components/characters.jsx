@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
+import { useCharacter } from "../hooks/useCharacter";
 
 export function Characters() {
-  const [characters, setCharacters] = useState([]);
+  const { getAllCharacters, character } = useCharacter();
 
   useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((res) => res.json())
-      .then((data) => setCharacters(data.results));
+    getAllCharacters();
   }, []);
 
   return (
     <>
       <div className="tarjetas">
-        {characters.map((item, index) => (
+        {character.map((item, index) => (
           <div className="personaje" key={index}>
             <img className="img" src={item.image}></img>
             <div className="info">

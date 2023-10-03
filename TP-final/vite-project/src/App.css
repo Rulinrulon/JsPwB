@@ -1,22 +1,35 @@
+header {
+  background-color: #fff;
+  color: #282828;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 300%;
+  text-align: center;
+}
+
 body {
   background-color: rgb(41, 44, 52);
-  margin: 50px;
 }
 
 .tarjetas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 0.2fr);
   grid-auto-rows: auto;
   gap: 20px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 55px;
 }
 
 .personaje {
   display: flex;
   flex-direction: row;
-  background-color: rgb(64, 69, 82);
-  border-radius: 20px;
+  background-color: rgb(60, 63, 69);
+  border-radius: 10px;
+  width: 590px;
+  height: 210px;
 }
 
 .info {
@@ -42,9 +55,46 @@ body {
 .img {
   object-fit: cover;
   width: fit-content;
-  border-radius: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 p {
   color: grey;
+}
+
+.titulo {
+  padding-bottom: 20px;
+}
+
+.botones {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+
+button {
+  background-color: transparent;
+  color: #282828;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.docs_about {
+  border: none;
+  font-size: 40%;
+}
+
+.support {
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+
+.info h3:hover,
+.info h2:hover {
+  color: orange;
+  cursor: pointer;
 }
