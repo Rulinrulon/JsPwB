@@ -8,28 +8,42 @@ header {
 
 body {
   background-color: rgb(41, 44, 52);
+  margin: 0%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(32, 35, 41);
+  color: rgb(158, 158, 158);
+  text-transform: uppercase;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-top: 100px;
 }
 
 .tarjetas {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, 0.2fr);
   grid-auto-rows: auto;
-  gap: 20px;
+  gap: 25px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 100px;
   margin-bottom: 100px;
-  margin-right: 50px;
-  margin-left: 55px;
 }
 
 .personaje {
   display: flex;
   flex-direction: row;
   background-color: rgb(60, 63, 69);
+  box-shadow: 0px 10px 20px -5px rgb(38, 40, 42);
   border-radius: 10px;
-  width: 590px;
-  height: 210px;
+  width: 600px;
+  height: 220px;
 }
 
 .info {
@@ -64,15 +78,14 @@ p {
 }
 
 .titulo {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .botones {
   display: flex;
   justify-content: end;
   flex-direction: row;
-  padding-top: 10px;
-  padding-right: 25px;
+  padding-right: 10px;
 }
 
 button {
@@ -91,10 +104,53 @@ button {
   padding: 10px;
   border: 1px solid orange;
   border-radius: 10px;
+  width: 130px;
+}
+
+.logo_y_botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.fondo {
+  position: relative;
+  height: 100%;
+  width: 70%;
+}
+
+.rickAndMorty {
+  fill: rgb(245, 245, 245);
+  position: absolute;
+  bottom: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  margin-left: 30px;
 }
 
 .info h3:hover,
 .info h2:hover {
   color: orange;
+  cursor: pointer;
+}
+
+.docs_about:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.support:hover {
+  background-color: orange;
+  color: #fff;
+  transition: 200ms;
   cursor: pointer;
 }
