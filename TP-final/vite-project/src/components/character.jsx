@@ -3,6 +3,17 @@ export function Character(props) {
 
   const { image, name, status, species, location, origin } = character;
 
+  const getStatusColor = (status) => {
+    if (status === "Alive") {
+      return "vivo";
+    }
+    if (status === "Dead") {
+      return "muerto";
+    } else {
+      return "desaparecido";
+    }
+  };
+
   return (
     <div className="personaje" key={index}>
       <img className="img" src={image}></img>
@@ -10,6 +21,7 @@ export function Character(props) {
         <div className="texto">
           <h2>{name}</h2>
           <h4>
+            <span className={`status_icon ${getStatusColor(status)}`}></span>
             {status} - {species}
           </h4>
         </div>
