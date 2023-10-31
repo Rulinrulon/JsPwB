@@ -17,10 +17,12 @@ footer {
   background-color: rgb(32, 35, 41);
   color: rgb(158, 158, 158);
   text-transform: uppercase;
+  text-align: center;
   font-size: 80%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   padding-top: 100px;
+  padding-bottom: 500px;
 }
 
 .tarjetas {
@@ -162,10 +164,17 @@ button {
 
 ul {
   list-style: none;
+  padding: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 a {
   margin-left: 30px;
+}
+
+.characters {
+  margin-left: 0px;
 }
 
 .server {
@@ -184,6 +193,11 @@ a {
 
 .powered {
   margin-left: 30px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
 }
 
 .info h3:hover,

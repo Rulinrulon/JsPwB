@@ -7,8 +7,8 @@ export const Svggit = () => {
       stroke-width="0"
       viewBox="0 0 16 16"
       class="footer-icon"
-      height="1em"
-      width="1em"
+      height="1.5em"
+      width="1.5em"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

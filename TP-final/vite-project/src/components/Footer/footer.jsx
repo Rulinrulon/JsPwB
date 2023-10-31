@@ -9,7 +9,9 @@ function Footer() {
     <footer>
       <ul className="datos">
         <li>
-          <a>characters: </a>
+          <a>
+            <span className="characters">characters: </span>
+          </a>
           <a>locations:</a>
           <a>episodes:</a>
         </li>
@@ -25,9 +27,15 @@ function Footer() {
         <Svgpowered />
       </ul>
       <ul className="redes">
-        <Svggit />
-        <Svgtw />
-        <Svgcorazon />
+        <div className="redes_iconos">
+          <Svggit />
+        </div>
+        <div className="redes_iconos">
+          <Svgtw />
+        </div>
+        <div className="redes_iconos">
+          <Svgcorazon />
+        </div>
       </ul>
     </footer>
   );
