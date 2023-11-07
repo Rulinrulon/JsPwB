@@ -200,6 +200,21 @@ a {
   align-items: center;
 }
 
+.redes_iconos {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.rulinrulon {
+  font-weight: bold;
+  transition: color 0.2s ease 0s;
+  color: rgb(245, 245, 245);
+  border-bottom: 1px solid rgb(255, 152, 0);
+  margin-left: 5px;
+  margin-right: 5px;
+  text-transform: none;
+}
+
 .info h3:hover,
 .info h2:hover {
   color: orange;

@@ -27,15 +27,24 @@ function Footer() {
         <Svgpowered />
       </ul>
       <ul className="redes">
-        <div className="redes_iconos">
+        <li className="redes_iconos">
           <Svggit />
-        </div>
-        <div className="redes_iconos">
+        </li>
+        <li className="redes_iconos">
           <Svgtw />
-        </div>
-        <div className="redes_iconos">
+        </li>
+        <li className="redes_iconos">
           <Svgcorazon />
-        </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span>
+            ❮❯ by
+            <a className="rulinrulon">Rulinrulon</a>
+            2023
+          </span>
+        </li>
       </ul>
     </footer>
   );
