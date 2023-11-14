@@ -1,7 +1,10 @@
+import { useEffect } from "react";
+import { useEpisode } from "../hooks/useEpisode";
+
 export function Character(props) {
   const { character, index } = props;
 
-  const { image, name, status, species, location, origin } = character;
+  const { image, name, status, species, location, origin, episode } = character;
 
   const getStatusColor = (status) => {
     if (status === "Alive") {
@@ -12,6 +15,18 @@ export function Character(props) {
     } else {
       return "desaparecido";
     }
+  };
+
+  const { getAllEpisodes } = useEpisode();
+
+  const episodes = () => {
+    const episodes = episode;
+    const casiDigitos = episodes.map((str) => str.slice(-2));
+    /*const digitosEpisodio = casiDigitos.map((str) => {
+      const partes = str.split("/");
+      return partes.length > 1 ? partes[1] : str;
+    });*/
+    getAllEpisodes(casiDigitos);
   };
 
   return (
@@ -30,7 +45,13 @@ export function Character(props) {
           <h3>{location.name}</h3>
         </div>
         <div className="texto">
-          <p>First seen in:</p>
+          <p>
+            <a>
+              <span className="episodes" onClick={episodes}>
+                Episodes
+              </span>
+            </a>
+          </p>
           <h3>{origin.name}</h3>
         </div>
       </div>

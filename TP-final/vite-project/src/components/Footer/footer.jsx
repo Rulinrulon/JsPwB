@@ -10,10 +10,14 @@ function Footer() {
       <ul className="datos">
         <li>
           <a>
-            <span className="characters">characters: </span>
+            <span className="cle">characters: </span>
           </a>
-          <a>locations:</a>
-          <a>episodes:</a>
+          <a>
+            <span className="cle">locations:</span>
+          </a>
+          <a>
+            <span className="cle">episodes:</span>
+          </a>
         </li>
       </ul>
       <ul className="server">
